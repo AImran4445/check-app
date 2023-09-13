@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Congratulations!</title>
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/009.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/flipclock.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/countdown.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/icon.js"></script>
+ 	<script src="js/lpixh.js"></script>
+</head>
+<style>
+    .form-wrapper
+    {
+        text-align: center;
+        margin-top: 22px;
+    }
+    .btn
+    {
+        margin-top: 20px;
+        border: none;
+        background-color: #00d8ff;
+        padding: 13px 65px;
+        padding: 13px 65px;
+        border-radius: 6px;
+        font-size: 23px;
+        font-weight: bold
+    }
+    .btn:hover{
+        background-color: #00cfff;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+
+    
+    }
+ 
+    .form-control
+    {
+       text-align: left;
+       margin-left: 3px;
+    }
+
+    .header03 span,
+    .header02 span{
+        font-family: 'Poppins', sans-serif;
+    }
+    @media (min-width: 992px){
+        .header02 {
+        font-size: 82px;
+    }
+        .header03 {
+        font-size: 50px;
+    }
+    }
+
+   
+    @media (max-width:720px) {
+        #mainContainer {
+            min-height: 64%;
+        }
+        .big-form .field-email{
+            padding: 14px 1px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: initial;
+        }
+        .big-form .btn {
+            padding: 14px;
+            border-radius: 5px;
+            width: 80%;
+        }
+        .btn:hover{
+            background-color: #00d8ff;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .header02 {
+            font-size: 3.2em;
+            width: 100%;
+            display: inline-block;
+        }
+        .header03 {
+            font-size: 1.7em;
+            width: 100%;
+            display: inline-block;
+            margin-bottom: 0rem;    
+        }
+        #mainContainer .d-flex{
+            margin-top: 4.5rem;
+        }
+        body {
+            background: url(./images/bg.jpg) -285px;
+        }
+}
+
+@media screen and (max-width: 365px){
+    .header02 {
+    font-size: 2.0em;
+}
+}
+
+@media screen and (max-width: 340px){
+    .header02 {
+    font-size: 1.9em;
+}
+}
+
+@media screen and (max-width: 319px) {
+#page-wrap {
+    width: 320px;
+    overflow: hidden;
+  }
+  .flip-clock-wrapper ul li {
+    line-height: 40px;
+}
+
+.flip-clock-wrapper ul {
+    width: 34px;
+    height: 41px;
+}
+.flip-clock-wrapper ul li a div div.inn {
+    font-size: 26px;
+}
+
+.flip-clock-divider {
+    display: inline-block;
+    position: relative;
+    width: 19px;
+    height: 55px;
+}
+.header02 {
+    font-size: 1.8em;
+}
+}
+
+</style>
+
+<body class='lnd_fi'>
+
+
+    <div class="container-fluid containerLogo">
+        <div id="logo">
+            <img height="55" id="imgLogo" src="images/Vyhraj-logo-border182x39.png">
+        </div>
+    </div>
+
+    <div id="page-wrap">
+        <div class="counter animated zoomInUp">
+            <div class="cnt flip-clock-wrapper">
+                <span class="flip-clock-divider hours">
+                    <span class="flip-clock-label">Hours</span>
+                </span>
+                <ul class="flip ">
+                    <li class="flip-clock-before">
+                        <a>
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">9</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">9</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flip-clock-active"><a href="#">
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a></li>
+                </ul>
+                <ul class="flip ">
+                    <li class="flip-clock-before"><a href="#">
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">9</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">9</div>
+                            </div>
+                        </a></li>
+                    <li class="flip-clock-active"><a href="#">
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a></li>
+                </ul><span class="flip-clock-divider minutes"><span class="flip-clock-label">Minutes</span><span
+                        class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span>
+                <ul class="flip ">
+                    <li class="flip-clock-before"><a href="#">
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">9</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">9</div>
+                            </div>
+                        </a></li>
+                    <li class="flip-clock-active"><a href="#">
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a></li>
+                </ul>
+                <ul class="flip  play">
+                    <li class="flip-clock-before"><a href="#">
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">1</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">1</div>
+                            </div>
+                        </a></li>
+                    <li class="flip-clock-active"><a href="#">
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a></li>
+                </ul><span class="flip-clock-divider seconds"><span class="flip-clock-label">Sekund</span><span
+                        class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span>
+                <ul class="flip  play">
+                    <li class="flip-clock-before"><a href="#">
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">1</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">1</div>
+                            </div>
+                        </a></li>
+                    <li class="flip-clock-active"><a href="#">
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a></li>
+                </ul>
+                <ul class="flip  play">
+                    <li class="flip-clock-before"><a href="#">
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">1</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">1</div>
+                            </div>
+                        </a></li>
+                    <li class="flip-clock-active"><a href="#">
+                            <div class="up">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                            <div class="down">
+                                <div class="shadow"></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="mainContainer">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1 class="textCenter header01">GRATULUJEME!</h1>
+                <div class="d-flex justify-content-center">
+
+
+                </div>
+                <h1 class="textCenter header02"><span class="b1"><script>document.write(getURLParameter('b1'))</script></span></h1>
+                <h1 class="textCenter header03"><span class="b2"><script>document.write(getURLParameter('b2'))</script></span></h1>
+
+					<div class="form-wrapper">
+
+                            <form class="big-form" action="https://app.confirmedsender.com/lists/sf020b8d0tf76/subscribe"
+                        method="post">
+                        <input class="form-control field-email field-type-text" placeholder="Zde zadej svůj email"
+                            type="email" required value="" name="EMAIL" id="EMAIL" />
+                        <input class="form-control field-cid field-type-text" placeholder="Cid" type="hidden" value=""
+                            name="CID" id="CID" />
+						<input class="form-control field-camp field-type-text" placeholder="CAMP" type="hidden" value="bonus-ppc"
+                            name="CAMP" id="CAMP" />
+						<input class="form-control field-camp2 field-type-text" placeholder="CAMP2" type="hidden" value=""
+                            name="CAMP2" id="CAMP2" />
+                        <input type="hidden" name="83771a48627e161acc0946449539ccfd290f4d51" tabindex="-1"
+                            autocomplete="83771a48627e161acc0946449539ccfd290f4d51" value="" />
+                        <input type="submit" class="btn btn-primary btn-flat" name="yt0"
+                            value="ZÍSKAT IHNED!" />
+                    </form>
+                        </div>
+
+                </div>
+
+
+                <div class="modal" id="terms" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p id="modal_content" style="height:400px; overflow-y:scroll;"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loading-layer" style="display:none"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="footer-div">
+
+                <div id="copyright">Copyright © 2023 - Všechna práva vyhrazena</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobileBackgroundAddon"> </div>
+
+    <script>
+
+        function loading_start() {
+            console.log("loading_start");
+            $("#submit_btn").css('opacity', '0.7');
+            $("#submit_btn").html("<i class='fa fa-spinner fa-spin' style='font-size:24px;margin-right:8px;'></i>Processing...");
+            window.loading_started = true;
+        }
+        function loading_end() {
+            console.log("loading_end");
+            $("#submit_btn").html("Claim it!");
+            window.loading_started = false;
+        }
+
+        function reset() {
+            $('div.error').hide();
+        }
+
+        function getFormData(selector) {
+            var data = {};
+            $.each($(selector).serializeArray(), function (_, kv) {
+                data[kv.name] = kv.value;
+            });
+            return data;
+        }
+
+
+
+        function error(selector) {
+            console.log(selector);
+            reset();
+            var el = $(selector);
+            el.show();
+        }
+
+
+
+        $(document).ready(function () {
+
+            $.ajax({ url: "/newent/view/", type: "post", dataType: "json", success: function (success) { console.log(success); } });
+
+            $('.terms-link').click(function () {
+                var privacy_route = '/newent/terms';
+                $.get(privacy_route, function (r) {
+                    $('#modal_content').html(r);
+                    $('#terms').modal('show');
+                });
+                return false;
+            });
+
+            $('#submit_btn').click(function () {
+                $('#register_form').submit();
+            });
+
+            $('#register_form').submit(function () {
+
+                try {
+
+                    var form_id = $(this).attr('id');
+                    var data = getFormData('#' + form_id);
+                    var result = validate(data, 'register');
+                    console.log(result);
+                    if (typeof result == 'string') {
+                        error('#' + form_id + ' #' + result);
+                        return false;
+                    }
+
+                    if (window.loading_started) {
+                        console.log('loading started, bailing');
+                        return false;
+                    }
+
+                    $('.loading-layer').fadeIn("slow");
+                    if (typeof window['loading_start'] === "function") window['loading_start']();
+
+                    $.post('/newent/optin/', data, function (r) {
+                        console.log(r);
+                        $('.loading-layer').fadeOut();
+                        if (typeof window['loading_end'] === "function") window['loading_end']();
+                        window.open(data.redirect_url);
+                        if (typeof data.refresh_url !== 'undefined') {
+                            window.setTimeout(function () {
+                                window.location.href = data.refresh_url;
+                            }, (1 * 5000));
+                        }
+                        return false;
+                    }, 'json');
+
+                    return false;
+
+                } catch (e) {
+                    console.log(e);
+                    return false;
+                }
+            }
+            );
+
+        });
+
+    </script>
+
+
+    <script src="js/flipclock.js"></script>
+    <script type="text/javascript">
+        var clock;
+
+        $(document).ready(function () {
+
+            clock = $('.cnt').FlipClock({
+                clockFace: 'HourlyCounter'
+            });
+            clock.setCountdown(true);
+            clock.setTime(300);
+        });
+    </script>
+	<script src="js/lpixh.js"></script>		
+</body>
+
+</html>

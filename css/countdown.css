@@ -1,0 +1,909 @@
+@import url("css.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+  font-family: "Open Sans", Arial, sans-serif;;
+}
+
+html {
+  font-family: "Open Sans";
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans";
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#midground {
+  background: url(../images/coins.png);
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+  background: #00d8ff;
+}
+#page-wrap {
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.logo {
+  align-self: flex-start;
+  margin-top: 30px;
+}
+
+.counter {
+  align-self: center;
+  margin-top: 10px;
+}
+
+.head-title {
+  font-family: "Open Sans";
+  color: #fff;
+  font-size: 42px;
+  text-shadow: 1px 6px 11px #000;
+  position: relative;
+  top: 10px;
+}
+.offer {
+  font-family: "Open Sans";
+  color: #fff;
+  font-size: 49px;
+  text-shadow: 1px 6px 11px #000;
+  position: relative;
+  top: -27px;
+  text-align: center;
+}
+.up-to {
+  font-size: 114px;
+  font-weight: 800;
+}
+.lnd_se .up-to {
+  font-size: 114px;
+  font-weight: 800;
+}
+.lnd_no .up-to {
+  font-size: 114px;
+  font-weight: 800;
+}
+.lnd_gn .up-to {
+  font-size: 83px;
+  font-weight: 800;
+}
+.bonus {
+  top: -27px;
+  position: relative;
+  font-size: 70px;
+  font-weight: 800;
+}
+.spins {
+  position: relative;
+  top: -38px;
+  font-size: 78px;
+  font-weight: 800;
+}
+.button-div {
+  position: relative;
+  top: -30px;
+}
+a.button {
+  font-family: "Open Sans";
+  background: #5fd600;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  width: 500px;
+  height: 73px;
+  font-size: 3vw;
+  font-weight: 800;
+  line-height: 71px;
+  letter-spacing: 4px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.flip-clock-label {
+  display: none;
+}
+
+.steps {
+  display: flex;
+  margin-left: 59px;
+  flex-wrap: wrap;
+  margin-top: 17px;
+}
+
+.steps .step_1 {
+  display: flex;
+  align-items: center;
+}
+.steps .step_2 {
+  display: flex;
+  align-items: center;
+}
+.steps .step_3 {
+  display: flex;
+  align-items: center;
+}
+
+.num {
+  font-family: "Open Sans";
+  color: #fff;
+  font-weight: 800;
+  font-size: 60px;
+}
+.step-content {
+  font-family: "Open Sans";
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.stp {
+  margin-right: 45px;
+}
+.flip-clock-wrapper ul {
+  width: 90px;
+}
+.footer {
+  font-family: "Open Sans";
+  color: #fff;
+  font-size: 11px;
+  width: 107%;
+  margin-top: 100px;
+}
+.footer a {
+  color: #1896b3;
+}
+#disclaimer {
+  width: 70%;
+  margin: 0 auto;
+}
+#icons {
+  position: relative;
+  right: 57px;
+}
+/* ---------------- MEDIA QUERIES ---------------------------------------------- */
+
+/* ------------- styles for MacBook Pro-sized screens and larger - */
+@media only screen and (min-width: 1440px) {
+  #page-wrap {
+    width: 1440px;
+    overflow: hidden;
+  }
+}
+
+/* ------------- styles for wide screens ------------------------- */
+@media only screen and (min-width: 1200px) {
+  #page-wrap {
+    width: 1070px;
+    overflow: hidden;
+  }
+}
+
+.lnd_gn .up-to {
+  font-size: 83px;
+  font-weight: 800;
+}
+.lnd_no .up-to {
+  font-size: 78px;
+  font-weight: 800;
+}
+.lnd_no .head-title {
+  font-size: 39px;
+}
+.lnd_no .bonus {
+  top: -22px;
+  position: relative;
+  font-size: 69px;
+  font-weight: 800;
+}
+
+.lnd_no .spins {
+  font-size: 65px;
+}
+
+.lnd_no .step-content {
+  font-size: 17px;
+}
+
+/*DE*/
+.lnd_de .up-to {
+  font-size: 110px;
+  font-weight: 800;
+}
+.lnd_de .head-title {
+  font-size: 30px;
+}
+.lnd_de .bonus {
+  top: -22px;
+  position: relative;
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.lnd_de .spins {
+  font-size: 68px;
+}
+
+.lnd_de .step-content {
+  font-size: 17px;
+}
+
+.lnd_de a.button {
+  font-size: 55px;
+}
+
+/*FI*/
+
+.lnd_fi .up-to {
+  font-size: 122px;
+  font-weight: 800;
+}
+.lnd_fi .head-title {
+  font-size: 45px;
+}
+.lnd_fi .bonus {
+  top: -22px;
+  position: relative;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.lnd_fi .spins {
+  font-size: 53px;
+}
+
+.lnd_fi .step-content {
+  font-size: 17px;
+}
+
+/*SE*/
+
+.lnd_se .up-to {
+  font-size: 76px;
+  font-weight: 800;
+}
+.lnd_se .head-title {
+  font-size: 30px;
+}
+.lnd_se .bonus {
+  top: -22px;
+  position: relative;
+  font-size: 68px;
+  font-weight: 800;
+}
+
+.lnd_se .spins {
+  font-size: 75px;
+}
+
+.lnd_se .step-content {
+  font-size: 17px;
+}
+
+/*AU*/
+
+.lnd_au .up-to {
+  font-size: 90px;
+  font-weight: 800;
+}
+
+/*CA*/
+
+.lnd_ca .up-to {
+  font-size: 90px;
+  font-weight: 800;
+}
+
+/* ------------- styles for narrow screens ----------------------- */
+@media screen and (min-width: 319px) {
+  body {
+    background: url(../images/bg.jpg) 1px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #page-wrap {
+    width: 320px;
+    overflow: hidden;
+  }
+  .up-to {
+    font-size: 53px;
+    font-weight: 800;
+  }
+  .logo {
+    align-self: initial;
+    margin-top: 30px;
+    position: relative;
+  }
+  .head-title {
+    font-size: 20px;
+    position: relative;
+  }
+  .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 33px;
+    font-weight: 800;
+  }
+  .spins {
+    position: relative;
+    top: -14px;
+    font-size: 37px;
+    font-weight: 800;
+  }
+  a.button {
+    font-family: "Open Sans";
+    background: #5fd600;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 251px;
+    height: 55px;
+    font-size: 37px;
+    font-weight: 800;
+    line-height: 52px;
+    letter-spacing: 4px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  .button-div {
+    position: relative;
+    top: -40px;
+  }
+  .steps {
+    display: flex;
+    margin-left: 114px;
+    flex-wrap: wrap;
+    margin-top: -40px;
+    width: 77%;
+  }
+
+  .num {
+    font-size: 40px;
+  }
+  .step-content {
+    font-size: 13px;
+  }
+  .counter {
+    align-self: center;
+    margin-top: 10px;
+  }
+  .flip-clock-wrapper ul {
+    width: 34px;
+    height: 41px;
+  }
+  .flip-clock-wrapper ul li {
+    line-height: 40px;
+  }
+  .flip-clock-wrapper ul li a div div.inn {
+    font-size: 26px;
+  }
+
+  .flip-clock-divider {
+    float: left;
+    display: inline-block;
+    position: relative;
+    width: 19px;
+    height: 55px;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
+
+  .footer #icons img {
+    width: 126%;
+  }
+
+  .lnd_no .up-to {
+    font-size: 35px;
+    font-weight: 800;
+  }
+  .lnd_no .head-title {
+    font-size: 17px;
+  }
+  .lnd_no .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 31px;
+    font-weight: 800;
+  }
+
+  .lnd_no .spins {
+    font-size: 29px;
+  }
+
+  .lnd_no .step-content {
+    font-size: 9px;
+  }
+
+  /*DE*/
+  .lnd_de .up-to {
+    font-size: 50px;
+    font-weight: 800;
+  }
+  .lnd_de .head-title {
+    font-size: 14px;
+  }
+  .lnd_de .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 800;
+  }
+
+  .lnd_de .spins {
+    font-size: 31px;
+  }
+
+  .lnd_de .step-content {
+    font-size: 9px;
+  }
+  .lnd_de a.button {
+    font-size: 26px;
+  }
+
+  /*FI*/
+
+  .lnd_fi .up-to {
+    font-size: 54px;
+    font-weight: 800;
+  }
+  .lnd_fi .head-title {
+    font-size: 20px;
+  }
+  .lnd_fi .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 27px;
+    font-weight: 800;
+  }
+  .lnd_fi a.button {
+    font-size: 26px;
+  }
+  .lnd_fi .spins {
+    font-size: 24px;
+  }
+
+  .lnd_fi .step-content {
+    font-size: 9px;
+  }
+
+  /*SE*/
+
+  .lnd_se .up-to {
+    font-size: 35px;
+    font-weight: 800;
+  }
+  .lnd_se .head-title {
+    font-size: 14px;
+  }
+  .lnd_se .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 31px;
+    font-weight: 800;
+  }
+  .lnd_se a.button {
+    font-size: 40px;
+  }
+  .lnd_se .spins {
+    font-size: 34px;
+  }
+
+  .lnd_se .step-content {
+    font-size: 9px;
+  }
+
+  /*AU*/
+
+  .lnd_au .up-to {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .lnd_au .head-title {
+    font-size: 19px;
+  }
+  .lnd_au .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 31px;
+    font-weight: 800;
+  }
+  .lnd_au a.button {
+    font-size: 36px;
+  }
+  .lnd_au .spins {
+    font-size: 34px;
+  }
+
+  .lnd_au .step-content {
+    font-size: 9px;
+  }
+
+  /*CA*/
+
+  .lnd_ca .up-to {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .lnd_ca .head-title {
+    font-size: 19px;
+  }
+  .lnd_ca .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 31px;
+    font-weight: 800;
+  }
+  .lnd_ca a.button {
+    font-size: 36px;
+  }
+  .lnd_ca .spins {
+    font-size: 34px;
+  }
+
+  .lnd_ca .step-content {
+    font-size: 9px;
+  }
+
+  /*GN*/
+
+  .lnd_gn .up-to {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .lnd_gn .head-title {
+    font-size: 19px;
+  }
+  .lnd_gn .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 31px;
+    font-weight: 800;
+  }
+  .lnd_gn a.button {
+    font-size: 36px;
+  }
+  .lnd_gn .spins {
+    font-size: 34px;
+  }
+
+  .lnd_gn .step-content {
+    font-size: 9px;
+  }
+}
+
+/* ------------- styles for narrow screens ----------------------- */
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  body {
+    background: url(../images/bg.jpg) -328px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #page-wrap {
+    width: 360px;
+    overflow: hidden;
+  }
+  .up-to {
+    font-size: 53px;
+    font-weight: 800;
+  }
+  .logo {
+    align-self: initial;
+    margin-top: 30px;
+    position: relative;
+  }
+  .head-title {
+    font-size: 20px;
+    position: relative;
+  }
+  .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 33px;
+    font-weight: 800;
+  }
+  .spins {
+    position: relative;
+    top: -14px;
+    font-size: 37px;
+    font-weight: 800;
+  }
+  a.button {
+    font-family: "Open Sans";
+    background: #5fd600;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 251px;
+    height: 55px;
+    font-size: 37px;
+    font-weight: 800;
+    line-height: 52px;
+    letter-spacing: 4px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  .button-div {
+    position: relative;
+    top: -40px;
+  }
+  .steps {
+    display: flex;
+    margin-left: 114px;
+    flex-wrap: wrap;
+    margin-top: -40px;
+    width: 77%;
+  }
+
+  .num {
+    font-size: 40px;
+  }
+  .step-content {
+    font-size: 13px;
+  }
+  .counter {
+    align-self: center;
+    margin-top: 10px;
+  }
+  .flip-clock-wrapper ul {
+    width: 34px;
+    height: 41px;
+  }
+  .flip-clock-wrapper ul li {
+    line-height: 40px;
+  }
+  .flip-clock-wrapper ul li a div div.inn {
+    font-size: 26px;
+  }
+
+  .flip-clock-divider {
+    float: left;
+    display: inline-block;
+    position: relative;
+    width: 19px;
+    height: 55px;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
+
+  .footer #icons img {
+    width: 126%;
+  }
+
+  .lnd_no .up-to {
+    font-size: 35px;
+    font-weight: 800;
+  }
+  .lnd_no .head-title {
+    font-size: 17px;
+  }
+  .lnd_no .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 31px;
+    font-weight: 800;
+  }
+
+  .lnd_no .spins {
+    font-size: 29px;
+  }
+
+  .lnd_no .step-content {
+    font-size: 9px;
+  }
+
+  /*DE*/
+  .lnd_de .up-to {
+    font-size: 50px;
+    font-weight: 800;
+  }
+  .lnd_de .head-title {
+    font-size: 14px;
+  }
+  .lnd_de .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 800;
+  }
+
+  .lnd_de .spins {
+    font-size: 31px;
+  }
+
+  .lnd_de .step-content {
+    font-size: 9px;
+  }
+  .lnd_de a.button {
+    font-size: 26px;
+  }
+
+  /*FI*/
+
+  .lnd_fi .up-to {
+    font-size: 54px;
+    font-weight: 800;
+  }
+  .lnd_fi .head-title {
+    font-size: 20px;
+  }
+  .lnd_fi .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 27px;
+    font-weight: 800;
+  }
+  .lnd_fi a.button {
+    font-size: 26px;
+  }
+  .lnd_fi .spins {
+    font-size: 24px;
+  }
+
+  .lnd_fi .step-content {
+    font-size: 9px;
+  }
+
+  /*SE*/
+
+  .lnd_se .up-to {
+    font-size: 35px;
+    font-weight: 800;
+  }
+  .lnd_se .head-title {
+    font-size: 14px;
+  }
+  .lnd_se .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 31px;
+    font-weight: 800;
+  }
+  .lnd_se a.button {
+    font-size: 40px;
+  }
+  .lnd_se .spins {
+    font-size: 34px;
+  }
+
+  .lnd_se .step-content {
+    font-size: 9px;
+  }
+
+  /*AU*/
+
+  .lnd_au .up-to {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .lnd_au .head-title {
+    font-size: 19px;
+  }
+  .lnd_au .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 31px;
+    font-weight: 800;
+  }
+  .lnd_au a.button {
+    font-size: 36px;
+  }
+  .lnd_au .spins {
+    font-size: 34px;
+  }
+
+  .lnd_au .step-content {
+    font-size: 9px;
+  }
+
+  /*CA*/
+
+  .lnd_ca .up-to {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .lnd_ca .head-title {
+    font-size: 19px;
+  }
+  .lnd_ca .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 31px;
+    font-weight: 800;
+  }
+  .lnd_ca a.button {
+    font-size: 36px;
+  }
+  .lnd_ca .spins {
+    font-size: 34px;
+  }
+
+  .lnd_ca .step-content {
+    font-size: 9px;
+  }
+
+  /*GN*/
+
+  .lnd_gn .up-to {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .lnd_gn .head-title {
+    font-size: 19px;
+  }
+  .lnd_gn .bonus {
+    top: -9px;
+    position: relative;
+    font-size: 31px;
+    font-weight: 800;
+  }
+  .lnd_gn a.button {
+    font-size: 36px;
+  }
+  .lnd_gn .spins {
+    font-size: 34px;
+  }
+
+  .lnd_gn .step-content {
+    font-size: 9px;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.step_1_delay {
+  animation-delay: 1.5s;
+}
+
+.step_2_delay {
+  animation-delay: 2s;
+}
+
+.step_3_delay {
+  animation-delay: 2.5s;
+}
+
+.gonzo_delay {
+  animation-delay: 0.1s;
+}
+
+.button_delay {
+  animation-delay: 1s;
+}
+
+.button_text_delay {
+  animation-delay: 3.5s;
+  animation-duration: 1s;
+}
+
+a.button_text_delay {
+  letter-spacing: normal;
+  border-radius: 3px;
+  padding: 5px;
+  width: 315px;
+  height: 55px;
+  line-height: 1.7;
+  font-weight: bold;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+}
